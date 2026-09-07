@@ -1,0 +1,14 @@
+PCA9685 VCC  -> Arduino 5V   (logic power, small draw)
+PCA9685 GND  -> Arduino GND
+PCA9685 SDA  -> Arduino A4
+PCA9685 SCL  -> Arduino A5
+
+PCA9685 V+   -> External 6V supply positive
+PCA9685 GND  -> External 6V supply negative (shared/common ground with Arduino GND)
+
+Servo 1 (base)   -> PCA9685 channel 0
+Servo 2 (shoulder) -> PCA9685 channel 1
+Servo 3 (elbow)    -> PCA9685 channel 2
+Servo 4 (wrist rot) -> PCA9685 channel 3
+Servo 5 (wrist tilt) -> PCA9685 channel 4
+Servo 6 (gripper)   -> PCA9685 channel 5

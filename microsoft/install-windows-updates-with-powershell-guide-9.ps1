@@ -1,0 +1,1 @@
+$computers = @("DC01","DC02","DC03")Invoke-Command -ComputerName $computers -ScriptBlock {    Import-Module PSWindowsUpdate    Add-WUServiceManager -MicrosoftUpdate -ErrorAction SilentlyContinue    Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -Install -AutoReboot}

@@ -1,0 +1,1 @@
+$computer = "DC01"Invoke-Command -ComputerName $computer -ScriptBlock {    Import-Module PSWindowsUpdate    Add-WUServiceManager -MicrosoftUpdate -ErrorAction SilentlyContinue    Get-WindowsUpdate -MicrosoftUpdate -AcceptAll -Install -AutoReboot}

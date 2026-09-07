@@ -1,0 +1,5 @@
+useradd -m -s /bin/bash newuser        # create user with a home directory
+passwd newuser                          # set password
+usermod -aG sudo newuser                # add to a group (sudo = admin-equivalent)
+groups newuser                           # what groups is this user in
+userdel -r olduser                       # delete user + home directory

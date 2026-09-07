@@ -1,0 +1,4 @@
+free -h                               # memory usage summary
+df -h                                  # disk space per mounted volume
+iostat -x 2                            # live disk I/O, refreshing every 2 seconds
+ss -tulpn                              # active network connections + listening ports (like the Network tab)

@@ -1,0 +1,4 @@
+top                                   # built into every distro, no install needed
+htop                                  # nicer version, install with: sudo apt install htop
+ps aux --sort=-%mem | head -10        # top 10 processes by memory, one-shot (no live view)
+kill -9 1234                          # End Task, by PID

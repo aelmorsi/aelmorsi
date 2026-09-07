@@ -1,0 +1,3 @@
+journalctl -xe                      # most recent, with extra context (like the "General" tab detail pane)
+journalctl -p err -b                 # only errors, since last boot (like filtering Event Viewer by level)
+journalctl -u sshd.service           # logs for one specific "service," same idea as filtering by source

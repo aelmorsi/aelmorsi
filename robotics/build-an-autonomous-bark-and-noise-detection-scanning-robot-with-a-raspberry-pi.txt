@@ -1,0 +1,14 @@
+TB6612FNG PWMA -> Raspberry Pi GPIO12
+TB6612FNG AIN1 -> Raspberry Pi GPIO5
+TB6612FNG AIN2 -> Raspberry Pi GPIO6
+TB6612FNG PWMB -> Raspberry Pi GPIO13
+TB6612FNG BIN1 -> Raspberry Pi GPIO19
+TB6612FNG BIN2 -> Raspberry Pi GPIO26
+TB6612FNG VM   -> Battery positive (motor voltage)
+TB6612FNG VCC  -> Raspberry Pi 3.3V (logic power)
+TB6612FNG GND  -> Common ground (Pi, battery negative, motors)
+
+HC-SR04 VCC -> 5V
+HC-SR04 GND -> GND
+HC-SR04 TRIG -> GPIO23
+HC-SR04 ECHO -> GPIO24 (through a voltage divider, since ECHO outputs 5V and the Pi's GPIO is 3.3V-only)

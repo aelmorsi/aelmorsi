@@ -1,0 +1,1 @@
+Add-WindowsCapability -Online -Name "LAPS.ManagementTools~~~~0.0.1.0"
